@@ -1,0 +1,37 @@
+hold on
+plot(x,(1)./(x.^(2)),'c-')
+plot(x,(1)./(x),'m-')
+plot(x,(1)./(x.^(4)),'r-')
+plot(x,(1)./(x.^(8)),'k-')
+hold off
+
+> figure(1)
+>> hold on
+>> plot(x,sin(1*x),'r-')
+>> plot(x,sin(2*x),'g-')
+>> plot(x,sin(4*x),'b-')
+>> plot(x,sin(8*x),'k-')
+>> hold off
+
+
+ezplot('(x-2)^2+(y-3)^2=9')
+>> plot(2,3,'k.')
+
+ figure(1)
+>> hold on
+>> subplot(3,2,1)
+>> plot(x,1*cos(x),'k-')
+>> subplot(3,2,3)
+>> plot(x,2*cos(x),'k-')
+>> subplot(3,2,5)
+>> plot(x,3*cos(x),'k-')
+>> subplot(3,2,2)
+>> plot(x,cos(1*x),'k-')
+>> subplot(3,2,4)
+>> plot(x,cos(2*x),'k-')
+>> subplot(3,2,6)
+>> plot(x,cos(3*x),'k-')
+>> hold off
+
+>r=m+s*randn(1000,1)
+hist(r,100)
